@@ -8,7 +8,8 @@ import pyscreenshot as ImageGrab
 from PIL import Image
 
 r = []
-with open('config.json', 'r', encoding='utf-8') as config_file:
+path = r'~/.config/mathpix/config.json'
+with open(os.path.expanduser(path), 'r', encoding='utf-8') as config_file:
     config = json.load(config_file)
 
 position = []

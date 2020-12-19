@@ -14,8 +14,8 @@ import json
 #
 
 env = os.environ
-
-with open('config.json', 'r', encoding='utf-8') as config_file:
+path = r'~/.config/mathpix/config.json'
+with open(os.path.expanduser(path), 'r', encoding='utf-8') as config_file:
     config = json.load(config_file)
 default_headers = {
     'app_id': env.get('APP_ID', config['APP_ID']),
