@@ -1,4 +1,4 @@
-config.json是配置文件
+配置文件路径为~/.config/mathpix/config.json
 
 在其中填入你的app_id和app_key(可以在mathpix官方网站上免费获得)，以及想要的默认的公式格式
 
